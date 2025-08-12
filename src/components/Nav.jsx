@@ -13,7 +13,7 @@ export default function Nav() {
           {navLinks.map((item) => (
             <li key={item.label}>
               <a
-                href="item.href"
+                href={item.href}
                 className="font-montserrat leading-normal text-lg text-slate-gray p-2"
               >
                 {item.label}
