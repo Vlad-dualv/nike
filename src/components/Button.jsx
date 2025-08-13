@@ -4,6 +4,7 @@ export default function Button({
   backgroundColor,
   textColor,
   borderColor,
+  fullWidth,
 }) {
   return (
     <button
@@ -12,7 +13,7 @@ export default function Button({
           backgroundColor
             ? `${backgroundColor} ${textColor} ${borderColor}`
             : "bg-coral-red text-white border-coral-red hover:bg-red-500 focus:bg-red-500 transition-all duration-300"
-        }`}
+        } ${fullWidth && "w-full"}`}
     >
       {label}
       {iconURL && (
