@@ -1,3 +1,4 @@
+import { shoe8 } from "../assets/images";
 import Button from "../components/Button";
 
 export default function SuperQuality() {
@@ -26,6 +27,15 @@ export default function SuperQuality() {
         <div className="mt-11">
           <Button label="View Details" />
         </div>
+      </div>
+      <div className="flex-1 flex justify-center items-center">
+        <img
+          src={shoe8}
+          alt="shoe8"
+          width={570}
+          height={522}
+          className="object-contain"
+        />
       </div>
     </section>
   );
