@@ -59,6 +59,7 @@ export default function Nav() {
 
         {/* Mobile Menu */}
         <div
+          className={`fixed inset-0 bg-white z-[100] lg:hidden transition-all duration-300 ${
             isMenuOpen ? "opacity-100 visible" : "opacity-0 invisible"
           }`}
         >
